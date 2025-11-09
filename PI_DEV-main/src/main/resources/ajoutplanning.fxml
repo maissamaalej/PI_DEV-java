@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1550.0" stylesheets="@css/style1.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ajoutplanningController">
+    <children>
+        <HBox prefHeight="810.0" prefWidth="288.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="810.0" prefWidth="341.0" styleClass="bg">
+                    <children>
+                        <ImageView fitHeight="199.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/logor.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#GoToHome" prefHeight="67.0" prefWidth="298.0" style="-fx-background-color: F58400;" text="Home" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="50.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="seance" mnemonicParsing="false" onAction="#GoToSeance" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Séances" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/calendrier.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="produit" mnemonicParsing="false" onAction="#GoToProduit" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Produits" textFill="#fafafa">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/produit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="offre" mnemonicParsing="false" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: F58400;" text="Offres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/offre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="60.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="event" mnemonicParsing="false" onAction="#GoToEvent" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58400;" text="Evénements" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="38.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/event.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="15.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="reclamation" mnemonicParsing="false" onAction="#GoToRec" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58500;" text="Reclamations" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/plainte.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="parametre" minHeight="0.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="362.0" style="-fx-background-color: F58400;" text="Paramètres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/paramètre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="602.0" style="-fx-background-color: F58400;" styleClass="lg" textFill="WHITE" translateY="50.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="logout" fitHeight="40.0" fitWidth="43.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/sortie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox layoutX="288.0" prefHeight="67.0" prefWidth="1260.0" style="-fx-background-color: #708090;">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="1246.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1159.0">
+                            <children>
+                                <TextField fx:id="search" prefHeight="33.0" prefWidth="249.0" promptText="Recherche..." styleClass="search-box">
+                                    <font>
+                                        <Font name="Cambria" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </TextField>
+                                <ImageView fx:id="isearch" fitHeight="42.0" fitWidth="38.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/cherche.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="57.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/notification.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/profile.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <VBox alignment="CENTER" layoutX="391.0" layoutY="176.0" prefHeight="349.0" prefWidth="360.0" spacing="15" style="-fx-background-color: #F0F0F0; -fx-padding: 20px; -fx-border-radius: 10; -fx-background-radius: 10;">
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Ajouter un Planning" textFill="#f58400">
+            <font>
+               <Font size="17.0" />
+            </font></Label>
+
+            <Label style="-fx-font-weight: bold;" text="Titre" />
+            <TextField fx:id="titreplan" promptText="Saisir le titre" />
+
+            <Label style="-fx-font-weight: bold;" text="Tarif" />
+            <TextField fx:id="tarifplan" promptText="Saisir le tarif" />
+
+            <Button onAction="#ajouterPlanning" style="-fx-background-color: F58400; -fx-text-fill: white;" text="Ajouter Planning">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></Button>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0">
+               <color>
+                  <Color red="0.501960813999176" green="0.501960813999176" blue="0.501960813999176" />
+               </color>
+            </DropShadow>
+         </effect>
+        </VBox>
+        <VBox fx:id="planningVBox" alignment="TOP_CENTER" layoutX="844.0" layoutY="201.0" prefHeight="122.0" prefWidth="547.0" style="-fx-background-color: #F0F0F0; -fx-padding: 20px; -fx-border-radius: 10; -fx-background-radius: 10;">
+
+        </VBox>
+      <Label layoutX="924.0" layoutY="160.0" />
+      <Label layoutX="1025.0" layoutY="145.0" text="Afficher Planning" textFill="#f58400">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="1007.0" layoutY="431.0" mnemonicParsing="false" onAction="#consulterplan" prefHeight="40.0" prefWidth="216.0" style="-fx-background-color: f58400;" text="consulter mon planning" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+
+    </children>
+</AnchorPane>

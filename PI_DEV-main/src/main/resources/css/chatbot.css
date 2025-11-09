@@ -1,0 +1,73 @@
+.root {
+    -fx-background-color: #1E1E1E; /* Fond noir */
+}
+
+
+.list-cell {
+    -fx-padding: 10;
+    -fx-background-radius: 10;
+    -fx-margin: 5;
+}
+
+
+.input-field {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: gray;
+    -fx-font-size: 16px;
+    -fx-padding: 12px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.send-button {
+    -fx-background-color: #F58400;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.send-button:hover {
+    -fx-background-color: #D97300;
+}
+
+.send-button:pressed {
+    -fx-background-color: #A85A00;
+}
+.hbox {
+    -fx-background-color: #000000; /* Fond noir */
+    -fx-border-color: #F58400; /* Bordure orange */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+}
+/* Style général de la fenêtre */
+.chat-list {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-background-color: #ffff; /* Couleur de fond sombre */
+    -fx-padding: 10px;
+}
+
+/* Style pour le message de l'utilisateur */
+.user-message {
+    -fx-font-weight: bold;
+    -fx-text-fill: #F58400; /* Couleur orange */
+    -fx-background-color: #333333; /* Fond sombre */
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+    -fx-margin: 5px;
+}
+
+/* Style pour la réponse du chatbot */
+.bot-message {
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* Couleur blanche */
+    -fx-background-color: #F58400; /* Couleur orange */
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+    -fx-margin: 5px;
+}

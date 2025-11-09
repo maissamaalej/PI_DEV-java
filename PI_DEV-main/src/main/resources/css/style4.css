@@ -1,0 +1,458 @@
+.search-box{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+.bg{
+    -fx-background-color: #F58400;
+}
+
+.event-card {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 5, 0, 0, 0);
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1;
+}
+
+.event-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.event-detail {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+.event-image {
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.details-button {
+    -fx-background-color: #93775a;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+}
+
+.details-button:hover {
+    -fx-background-color: #FF9900;
+}
+
+
+
+
+
+/*.root {*/
+/*    -fx-background-color: #f4f4f4;*/
+/*    -fx-font-family: "Arial";*/
+/*}*/
+
+.buttonn {
+    -fx-background-color: linear-gradient(to right, #FF914D, #FF6600);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+.button:hover {
+
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/*.text-field, .choice-box, .date-picker {*/
+/*    -fx-background-color: white;*/
+/*    -fx-border-color: #ccc;*/
+/*    -fx-border-radius: 5;*/
+/*    -fx-padding: 5px;*/
+/*}*/
+
+
+.update-button {
+    -fx-background-color: #FE9E57;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;}
+.update-button:hover {
+    -fx-background-color: #FE8528;
+}
+.delete-button {
+    -fx-background-color: #FE8578;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8 15;
+
+}
+.delete-button:hover {
+    -fx-background-color: #FF7364;
+}
+
+
+.form-label {
+    -fx-text-fill: #2c3e50;
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+}
+
+.input-field {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #3498db;
+    -fx-effect: dropshadow(gaussian, rgba(52,152,219,0.3), 8, 0, 0, 0);
+}
+
+.date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 4px;
+}
+
+.form-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+
+
+
+/*.choice-box {*/
+/*    -fx-background-color: white;*/
+/*    -fx-border-color: #bdc3c7;*/
+/*    -fx-border-radius: 4px;*/
+/*    -fx-padding: 6px;*/
+/*}*/
+
+
+
+.form-button:hover {
+    -fx-opacity: 0.9;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+/* Specific button colors */
+.primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+
+.primary:hover {
+    -fx-background-color: #2980b9;
+    fx-opacity: 0.9;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+.secondary {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+
+}
+
+.secondary:hover {
+    -fx-background-color: #7f8c8d;
+    fx-opacity: 0.9;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+.tr{
+    -fx-background-color: #CF4B36;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-cursor: hand;
+}
+.tr:hover {
+    -fx-background-color: #D13922;
+    fx-opacity: 0.9;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand;
+}
+
+
+
+
+
+
+ .text-field ,.choice-box,#idDescription{
+     -fx-background-color: #f5f5f5;
+     -fx-background-radius: 5;
+     -fx-border-radius: 5;
+     -fx-border-color: #e0e0e0;
+     -fx-border-width: 1;
+     -fx-padding: 8 12;
+     -fx-font-family: 'Segoe UI';
+     -fx-font-size: 14px;
+     -fx-text-fill: #333333;
+ }
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-effect: dropshadow(gaussian, rgba(33,150,243,0.2), 10, 0, 0, 0);
+}
+
+.text-field:disabled {
+    -fx-opacity: 0.7;
+}
+
+.text-field .prompt-text {
+    -fx-text-fill: #999999;
+    -fx-font-style: italic;
+}
+
+/* Specific style for small fields like CVC and expiration */
+.small-field {
+    -fx-pref-width: 80;
+    -fx-font-size: 13px;
+}
+
+. shadow {
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 8, 0, 0, 0);
+}
+
+    .white-bg{
+        -fx-background-colop: #fff;
+        -fx-background-radius: 7px
+;}
+.background{
+    -fx-background-color: linear-gradient(to top right, #f58400 ,#000);
+    -fx-border-color: #000;
+    -fx-border-width: .4px .2px .4px .4px;
+
+}
+.nav {
+    background-color: #FF8C00; /* Orange vif */
+    color: white; /* Texte en blanc */
+    border: 2px solid #FF8C00; /* Bordure orange */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille de la police */
+    text-align: center; /* Centrer le texte */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: all 0.3s ease; /* Transition douce pour l'effet de survol */
+}
+
+/* Effet au survol du bouton */
+.nav:hover {
+    background-color: #E67E22; /* Orange plus foncé au survol */
+    border-color: #E67E22; /* Bordure orange plus foncée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile au survol */
+}
+.nombre {
+    -fx-background-color: linear-gradient(to top right,#f58400, #bc6201);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+.nombre:hover {
+    -fx-background-color: linear-gradient(to top right, #fac180,#f58400);
+
+}
+.header-label {
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-color: #4CAF50; /* Couleur de fond */
+    -fx-padding: 5px; /* Espacement interne */
+    -fx-alignment: center; /* Centrer le texte */
+}
+/* Style pour les en-têtes */
+.header-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-background-color: #f58400; /* Orange */
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+/* Style pour le bouton "Supprimer" */
+.supprimer-button {
+    -fx-background-color: #f58400; /* Orange */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 10px;
+    -fx-border-radius: 5px;
+}
+
+.supprimer-button:hover {
+    -fx-background-color: #e57300; /* Orange plus foncé au survol */
+}
+
+/* Style pour les lignes paires */
+.row-even {
+    -fx-background-color: #ffffff; /* Blanc */
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+}
+
+/* Style pour les lignes impaires */
+.row-odd {
+    -fx-background-color: #f5f5f5; /* Gris très clair */
+    -fx-text-fill: black;
+    -fx-padding: 10px;
+}
+
+/* Style pour le GridPane */
+.grid-pane {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* style.css */
+
+/* 1. Style de la Grille */
+.grid-pane {
+    background: #F5F5F5;  /* Gris clair pour le fond */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre pour un effet moderne */
+}
+
+/* 2. Style des en-têtes de colonnes */
+.grid-pane .header-label {
+    font-weight: bold;
+    color: #F58400;  /* Orange pour les en-têtes */
+    font-size: 14px;
+    text-align: center;
+}
+
+/* 3. Style des Labels (Nom, Prénom, Email, etc.) */
+.label {
+    font-size: 14px;
+    padding: 8px;
+    text-align: center;
+    color: #333; /* Texte en noir pour la lisibilité */
+}
+
+.label:hover {
+    background-color: #F1F1F1; /* Fond clair au survol */
+    cursor: pointer;
+}
+
+/* 4. Style des Boutons */
+button {
+    background: linear-gradient(to right, #F58400, #F3A400); /* Dégradé orange */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background: #F3A400;  /* Couleur plus claire au survol */
+    transform: scale(1.05);  /* Effet de zoom au survol */
+}
+
+button:pressed {
+    background: #D47400; /* Couleur plus foncée lors du clic */
+    transform: scale(0.98); /* Réduire légèrement lors du clic */
+}
+
+/* 5. Style des actions avec les boutons (Supprimer/Valider) */
+.actions-box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.supprimer-button, .valider-button {
+    background: #D13922;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.supprimer-button:hover, .valider-button:hover {
+    background: #F3A400;  /* Survol avec une nuance plus claire */
+}
+
+.supprimer-button:pressed, .valider-button:pressed {
+    background: #D13922 ; /* Plus foncé lors du clic */
+}
+
+/* 6. Styles pour les ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* 7. Style du VBox qui contient les coachs */
+.coach-container {
+    padding: 20px;
+    background: #FFFFFF; /* Fond blanc pour le conteneur principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre douce pour un effet moderne */
+}
+
+/* 8. Label de titre pour les catégories de coachs */
+.label-titre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F58400; /* Orange pour les titres */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+

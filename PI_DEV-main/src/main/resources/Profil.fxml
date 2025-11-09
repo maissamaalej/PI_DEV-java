@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<?import javafx.scene.control.Button?>-->
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.AnchorPane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">-->
+<!--   <children>-->
+<!--      <AnchorPane prefHeight="122.0" prefWidth="1550.0" styleClass="up" stylesheets="@css/Profil.css" />-->
+<!--      <AnchorPane layoutX="-15.0" layoutY="122.0" prefHeight="582.0" prefWidth="1550.0" stylesheets="@css/Profil.css">-->
+<!--         <children>-->
+<!--            <Label fx:id="emailProfil" layoutX="476.0" layoutY="234.0" prefHeight="26.0" prefWidth="236.0" text="emaillllllllllllllllll">-->
+<!--               <font>-->
+<!--                  <Font size="15.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--            <Label fx:id="MDPpROFIL" layoutX="487.0" layoutY="337.0" prefHeight="26.0" prefWidth="238.0" text="********">-->
+<!--               <font>-->
+<!--                  <Font size="15.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--            <Button layoutX="684.0" layoutY="469.0" mnemonicParsing="false" styleClass="update-btn" stylesheets="@css/Profil.css" text="Modifier mes informations">-->
+<!--               <font>-->
+<!--                  <Font size="18.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--            <ImageView fx:id="photo" fitHeight="150.0" fitWidth="200.0" layoutX="675.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true" />-->
+<!--            <Label fx:id="NP" layoutX="727.0" layoutY="90.0" text="Nom prenom">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold" size="16.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--            <Label layoutX="460.0" layoutY="295.0" prefHeight="26.0" prefWidth="116.0" text="Mot de passe : ">-->
+<!--               <font>-->
+<!--                  <Font size="15.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--            <Label layoutX="442.0" layoutY="184.0" prefHeight="26.0" prefWidth="62.0" text="Email : ">-->
+<!--               <font>-->
+<!--                  <Font size="15.0" />-->
+<!--               </font>-->
+<!--            </Label>-->
+<!--            <AnchorPane fx:id="adherent" layoutX="831.0" layoutY="155.0" prefHeight="223.0" prefWidth="676.0" visible="false">-->
+<!--               <children>-->
+<!--                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="62.0" text="Poids : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="62.0" text="Taille : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="62.0" text="Age : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="311.0" layoutY="17.0" prefHeight="26.0" prefWidth="62.0" text="Genre : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="309.0" layoutY="155.0" prefHeight="26.0" prefWidth="113.0" text="Votre niveau  : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="306.0" layoutY="78.0" prefHeight="26.0" prefWidth="132.0" text="Votre objectif : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="poids" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" text="POIDS">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="taille" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="agee" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="genre" layoutX="389.0" layoutY="32.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="objectif" layoutX="426.0" layoutY="115.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="niveau" layoutX="414.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--            <AnchorPane fx:id="coach" layoutX="841.0" layoutY="163.0" prefHeight="223.0" prefWidth="676.0">-->
+<!--               <children>-->
+<!--                  <Label layoutX="50.0" layoutY="37.0" prefHeight="26.0" prefWidth="168.0" text="Années d'expériences : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="57.0" layoutY="113.0" prefHeight="26.0" prefWidth="115.0" text="Spécialité: ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="379.0" layoutY="16.0" prefHeight="26.0" prefWidth="62.0" text="CV : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="experience" layoutX="102.0" layoutY="72.0" prefHeight="26.0" prefWidth="236.0" text="experience">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="specialite" layoutX="93.0" layoutY="143.0" prefHeight="26.0" prefWidth="236.0" text="specialite">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <ImageView fx:id="idCV" fitHeight="150.0" fitWidth="200.0" layoutX="422.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                    -->
+<!--                  </ImageView>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--            <AnchorPane fx:id="entreprise" layoutX="841.0" layoutY="165.0" prefHeight="223.0" prefWidth="676.0" visible="false">-->
+<!--               <children>-->
+<!--                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="162.0" text="Nom de l'entreprise : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="99.0" text="Adresse : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="107.0" text="Téléphone : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="311.0" layoutY="65.0" prefHeight="26.0" prefWidth="107.0" text="Description : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="idnomentrep" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="idadresseentrep" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="idtelE" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="iddescE" layoutX="354.0" layoutY="103.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--            <AnchorPane fx:id="Organisation" layoutX="842.0" layoutY="165.0" prefHeight="223.0" prefWidth="676.0" visible="false">-->
+<!--               <children>-->
+<!--                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="162.0" text="Nom de l'organisation : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="99.0" text="Adresse : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="107.0" text="Téléphone : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="311.0" layoutY="65.0" prefHeight="26.0" prefWidth="107.0" text="Description : ">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="nomO" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="AdresseO" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="TelO" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--                  <Label fx:id="descO" layoutX="354.0" layoutY="103.0" prefHeight="26.0" prefWidth="236.0" text="000000">-->
+<!--                     <font>-->
+<!--                        <Font size="15.0" />-->
+<!--                     </font>-->
+<!--                  </Label>-->
+<!--               </children>-->
+<!--            </AnchorPane>-->
+<!--            <Button fx:id="togglePasswordBtn" layoutX="619.0" layoutY="338.0" mnemonicParsing="false" text="👁" />-->
+<!--            <Button fx:id="retour" layoutX="28.0" layoutY="29.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="90.0" styleClass="up" stylesheets="@css/Profil.css" text="⬅">-->
+<!--               <font>-->
+<!--                  <Font size="22.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--            <Button layoutX="659.0" layoutY="337.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="47.0" style="-fx-background-color: #f58400;" stylesheets="@css/Profil.css" text="✍">-->
+<!--               <font>-->
+<!--                  <Font size="20.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+<!--         </children>-->
+<!--      </AnchorPane>-->
+<!--   </children>-->
+<!--</AnchorPane>-->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ProfilController">
+   <children>
+      <AnchorPane prefHeight="122.0" prefWidth="1550.0" styleClass="up" stylesheets="@css/Profil.css" />
+      <AnchorPane layoutX="-15.0" layoutY="122.0" prefHeight="582.0" prefWidth="1550.0">
+         <children>
+            <Label fx:id="emailProfil" layoutX="476.0" layoutY="234.0" prefHeight="26.0" prefWidth="236.0" text="emaillllllllllllllllll">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="MDPpROFIL" layoutX="487.0" layoutY="337.0" prefHeight="26.0" prefWidth="238.0" text="********">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button layoutX="598.0" layoutY="469.0" mnemonicParsing="false" onAction="#GoToUpdateProfile" prefHeight="58.0" prefWidth="390.0" text="Modifier mes informations">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="photo" fitHeight="233.0" fitWidth="318.0" layoutX="672.0" layoutY="-102.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="NP" layoutX="752.0" layoutY="142.0" stylesheets="@css/Profil.css" text="Nom prenom">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="font" />
+                  <String fx:value="Label" />
+                  <String fx:value="text" />
+               </styleClass>
+            </Label>
+            <Label layoutX="460.0" layoutY="295.0" prefHeight="26.0" prefWidth="116.0" text="Mot de passe : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="442.0" layoutY="184.0" prefHeight="26.0" prefWidth="62.0" text="Email : ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <AnchorPane fx:id="adherent" layoutX="831.0" layoutY="155.0" prefHeight="223.0" prefWidth="676.0" visible="false">
+               <children>
+                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="62.0" text="Poids : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="62.0" text="Taille : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="62.0" text="Age : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="17.0" prefHeight="26.0" prefWidth="62.0" text="Genre : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="309.0" layoutY="155.0" prefHeight="26.0" prefWidth="113.0" text="Votre niveau  : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="306.0" layoutY="78.0" prefHeight="26.0" prefWidth="132.0" text="Votre objectif : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="poids" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" text="POIDS">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="taille" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="agee" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="genre" layoutX="389.0" layoutY="32.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="objectif" layoutX="426.0" layoutY="115.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="niveau" layoutX="414.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="coach" layoutX="841.0" layoutY="163.0" prefHeight="223.0" prefWidth="676.0" visible="false">
+               <children>
+                  <Label layoutX="50.0" layoutY="37.0" prefHeight="26.0" prefWidth="168.0" text="Années d'expériences : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="57.0" layoutY="113.0" prefHeight="26.0" prefWidth="115.0" text="Spécialité: ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="experience" layoutX="102.0" layoutY="72.0" prefHeight="26.0" prefWidth="236.0" text="experience">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="specialite" layoutX="93.0" layoutY="143.0" prefHeight="26.0" prefWidth="236.0" text="specialite">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="entreprise" layoutX="841.0" layoutY="165.0" prefHeight="223.0" prefWidth="676.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="162.0" text="Nom de l'entreprise : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="99.0" text="Adresse : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="107.0" text="Téléphone : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="65.0" prefHeight="26.0" prefWidth="107.0" text="Description : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idnomentrep" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" style="-fx-text-fill: #333333;" styleClass="idnomentrep" stylesheets="@css/Profil.css" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idadresseentrep" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" styleClass="idadresseentrep" stylesheets="@css/Profil.css" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idtelE" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" styleClass="idtelE" stylesheets="@css/Profil.css" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="iddescE" layoutX="354.0" layoutY="103.0" prefHeight="26.0" prefWidth="236.0" styleClass="iddescE" stylesheets="@css/Profil.css" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="Organisation" layoutX="842.0" layoutY="165.0" prefHeight="223.0" prefWidth="676.0" visible="false">
+               <children>
+                  <Label layoutX="50.0" layoutY="17.0" prefHeight="26.0" prefWidth="162.0" text="Nom de l'organisation : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="51.0" layoutY="80.0" prefHeight="26.0" prefWidth="99.0" text="Adresse : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="53.0" layoutY="156.0" prefHeight="26.0" prefWidth="107.0" text="Téléphone : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="311.0" layoutY="65.0" prefHeight="26.0" prefWidth="107.0" text="Description : ">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nomO" layoutX="84.0" layoutY="47.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="AdresseO" layoutX="90.0" layoutY="117.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="TelO" layoutX="105.0" layoutY="187.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="descO" layoutX="354.0" layoutY="103.0" prefHeight="26.0" prefWidth="236.0" text="000000">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="togglePasswordBtn" layoutX="594.0" layoutY="328.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="54.0" stylesheets="@css/Profil.css" text="👁">
+               <styleClass>
+                  <String fx:value="togglePasswordBtn" />
+                  <String fx:value="Button" />
+               </styleClass></Button>
+            <Button fx:id="retour" layoutX="28.0" layoutY="29.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="90.0" styleClass="retour" stylesheets="@css/Profil.css" text="⬅">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="resetMDPBUTTON" layoutX="658.0" layoutY="328.0" mnemonicParsing="false" onAction="#ouvrirResetPassword" prefHeight="43.0" prefWidth="53.0" text="✍">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Circle fx:id="circle" fill="DODGERBLUE" layoutX="802.0" layoutY="15.0" radius="109.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

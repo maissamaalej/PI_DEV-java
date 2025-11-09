@@ -1,0 +1,16 @@
+/* styles.css */
+.default-bar {
+    -fx-bar-fill: #FFA500; /* Orange pour Adhérents */
+}
+
+.coach-bar {
+    -fx-bar-fill: #0000FF; /* Bleu pour Coachs */
+}
+
+.investor-bar {
+    -fx-bar-fill: #00FF00; /* Vert pour Investisseurs */
+}
+
+.creator-bar {
+    -fx-bar-fill: #800080; /* Violet pour Créateurs */
+}

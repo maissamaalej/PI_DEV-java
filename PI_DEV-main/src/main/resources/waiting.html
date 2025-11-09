@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Live en attente</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Live en attente...</h1>
+    <p>Votre diffusion en direct va démarrer sous peu.</p>
+    <!-- Le placeholder suivant sera remplacé par l'URL du player quand le live sera actif -->
+    <div id="player">
+        <iframe src="{{HLS_URL}}" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<AnchorPane prefHeight="700.0" prefWidth="1550.0" stylesheets="@css/style3.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.OfferDetailsController">
+    <children>
+        <HBox prefHeight="810.0" prefWidth="288.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="810.0" prefWidth="341.0" styleClass="bg">
+                    <children>
+                        <ImageView fitHeight="199.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/logor.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="298.0" style="-fx-background-color: F58400;" text="Home" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="50.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="seance" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Séances" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/calendrier.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="produit" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Produits" textFill="#fafafa">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/produit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="offre" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: F58400;" text="Offres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/offre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="60.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="event" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58400;" text="Evénements" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="38.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/event.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="15.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="reclamation" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58500;" text="Reclamations" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/plainte.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="parametre" minHeight="0.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="362.0" style="-fx-background-color: F58400;" text="Paramètres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/paramètre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="602.0" style="-fx-background-color: F58400;" styleClass="lg" textFill="WHITE" translateY="50.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="logout" fitHeight="40.0" fitWidth="43.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/sortie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox layoutX="288.0" prefHeight="67.0" prefWidth="1260.0" style="-fx-background-color: #708090;">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="1246.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1159.0">
+                            <children>
+                                <TextField fx:id="search" prefHeight="33.0" prefWidth="249.0" promptText="Recherche..." styleClass="search-box">
+                                    <font>
+                                        <Font name="Cambria" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </TextField>
+                                <ImageView fx:id="isearch" fitHeight="42.0" fitWidth="38.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/cherche.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="57.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/notification.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/profile.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <VBox fx:id="cardContainer" layoutX="400.0" layoutY="149.0" prefHeight="309.0" prefWidth="350.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-padding: 20;">
+            <children>
+                <Label fx:id="nameLabel" style="-fx-font-size: 20px; -fx-font-weight: 700; -fx-text-fill: #333333;">
+                    <VBox.margin>
+                        <Insets bottom="5" />
+                    </VBox.margin>
+                </Label>
+
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <Label fx:id="typeLabel" style="-fx-font-size: 12px; -fx-text-fill: #666666; -fx-padding: 5 7; -fx-background-radius: 5; -fx-background-color: #e0e0e0;" />
+                    <Label fx:id="etatLabel" style="-fx-font-size: 12px; -fx-text-fill: white; -fx-padding: 5 7; -fx-background-radius: 5; -fx-background-color: #4CAF50;" />
+                </HBox>
+
+                <Label fx:id="descriptionLabel" style="-fx-font-size: 14px; -fx-text-fill: #666666; -fx-line-spacing: 3px;" wrapText="true">
+                    <VBox.margin>
+                        <Insets bottom="10" top="5" />
+                    </VBox.margin>
+                </Label>
+
+                <GridPane hgap="10" vgap="8">
+                    <columnConstraints>
+                        <ColumnConstraints prefWidth="100" />
+                        <ColumnConstraints />
+                    </columnConstraints>
+
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+
+                    <children>
+                        <Label style="-fx-text-fill: #999999;" text="baha:" />
+                        <Label fx:id="validiteLabel" style="-fx-text-fill: #333333; -fx-font-weight: 500;" GridPane.columnIndex="1" />
+                        <Label fx:id="specificLabel1" style="-fx-text-fill: black; -fx-font-size: 14px;" />
+                        <Label fx:id="specificLabel2" style="-fx-text-fill: black; -fx-font-size: 14px;" />
+                        <Label fx:id="specificLabel3" style="-fx-text-fill: black; -fx-font-size: 14px;" />
+                        <Label fx:id="specificLabel4" style="-fx-text-fill: black; -fx-font-size: 14px;" />
+
+                    </children>
+                </GridPane>
+
+                <Separator style="-fx-padding: 10 0;">
+                    <VBox.margin>
+                        <Insets bottom="10" top="15" />
+                    </VBox.margin>
+                </Separator>
+
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button fx:id="updateButton" onAction="#handleUpdateButtonAction" text="Mettre à jour" />
+                        <Button fx:id="deleteButton" onAction="#handleDeleteButtonAction" text="Supprimer" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+
+    </children>
+</AnchorPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+.side-form{
+    -fx-background-color: linear-gradient(to top right, #f58400 ,#000);
+    -fx-border-color: #000;
+    -fx-border-width: .4px .2px .4px .4px;
+
+}
+.side-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+    -fx-font-size: 14px;
+    -fx-border-color: #fff;
+    -fx-border-width: .5px;
+}
+.side-btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+}
+.close {
+    -fx-background-color: #f58400;
+    -fx-cursor: hand;
+}
+
+.close:hover {
+        -fx-background-color:#ea1717;
+
+}
+.login-form{
+    -fx-background-color: #fff;
+    -fx-border-color: #000;
+    -fx-border-width: .4px .4px .4px .2px;
+
+}
+
+.login-btn {
+    -fx-background-color: linear-gradient(to top right,#f58400, #bc6201);
+    -fx-cursor: hand;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-family: Arial;
+}
+    .login-btn:hover {
+        -fx-background-color: linear-gradient(to top right, #fac180,#f58400);
+
+    }
+
+.textfield {
+    -fx-background-color: #ffff;
+    -fx-font-size: 13px;
+    -fx-font-family: Tahoma;
+    -fx-border-color: #000;
+    -fx-border-width: .3px;
+}
+
+    .textfield:focused{
+        -fx-background-color: #fff;
+        -fx-border-width: 1px;
+        -fx-border-color: #f58400;
+
+    }
+
+.text-field-error {
+    -fx-border-color: red;
+    -fx-border-width: 1px;
+
+}
+
+/* Style du bouton Récupérer mot de passe */
+.recover-password-btn {
+    background-color: #FF8C00; /* Orange vif */
+    color: white; /* Texte en blanc */
+    border: 2px solid #FF8C00; /* Bordure orange */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    font-size: 16px; /* Taille de la police */
+    text-align: center; /* Centrer le texte */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: all 0.3s ease; /* Transition douce pour l'effet de survol */
+}
+
+/* Effet au survol du bouton */
+.recover-password-btn:hover {
+    background-color: #E67E22; /* Orange plus foncé au survol */
+    border-color: #E67E22; /* Bordure orange plus foncée */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre subtile au survol */
+}
+
+/* Effet au focus du bouton */
+.recover-password-btn:focused {
+    outline: none; /* Enlever le contour par défaut du focus */
+    box-shadow: 0 0 5px rgba(255, 140, 0, 0.8); /* Légère lueur orange autour du bouton */
+}
+
+/* Style alternatif (si tu veux un bouton gris clair pour un état désactivé ou autre) */
+.recover-password-btn.disabled {
+    background-color: #BDC3C7; /* Gris clair */
+    border: 2px solid #BDC3C7; /* Bordure gris clair */
+    color: #7F8C8D; /* Texte gris foncé */
+    cursor: not-allowed; /* Désactive le curseur */
+}
+
+.recover-password-btn.disabled:hover {
+    background-color: #BDC3C7; /* Pas de changement au survol */
+    box-shadow: none; /* Pas d'ombre */
+}
+

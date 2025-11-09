@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@css/style3.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateOffreProduit">
+    <children>
+        <VBox alignment="CENTER" spacing="20.0" layoutX="100.0" layoutY="50.0">
+            <children>
+                <Label text="Modifier une Offre Produit" />
+                <GridPane hgap="10" vgap="10">
+                    <children>
+                        <Label text="Nom:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+                        <TextField fx:id="nomField" GridPane.rowIndex="0" GridPane.columnIndex="1" />
+                        <Label text="Description:" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+                        <TextField fx:id="descriptionField" GridPane.rowIndex="1" GridPane.columnIndex="1" />
+                        <Label text="Durée de validité:" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+                        <DatePicker fx:id="dureeValiditeField" GridPane.rowIndex="2" GridPane.columnIndex="1" />
+                        <Label text="État:" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+                        <ChoiceBox fx:id="etatField" GridPane.rowIndex="3" GridPane.columnIndex="1" />
+                        <Label text="Nouveau Prix:" GridPane.rowIndex="4" GridPane.columnIndex="0" />
+                        <TextField fx:id="nouveauPrixField" GridPane.rowIndex="4" GridPane.columnIndex="1" />
+                        <Label text="Quantité Max:" GridPane.rowIndex="5" GridPane.columnIndex="0" />
+                        <TextField fx:id="quantiteMaxField" GridPane.rowIndex="5" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+                <HBox spacing="10.0">
+                    <children>
+                        <Button fx:id="updateButton" mnemonicParsing="false" text="Mettre à jour" onAction="#handleUpdateButtonAction" />
+
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

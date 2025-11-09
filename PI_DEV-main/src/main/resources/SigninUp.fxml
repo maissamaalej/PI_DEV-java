@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SigninUpController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="800.0" prefWidth="1200.0">
+         <children>
+            <AnchorPane fx:id="sub_form" prefHeight="800.0" prefWidth="600.0" styleClass="side-form" stylesheets="@css/SignInDesign.css" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Label fx:id="edit_label2" layoutX="184.0" layoutY="470.0" prefHeight="32.0" prefWidth="212.0" text="Créer votre compte" textFill="#f4f0f0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="edit_label1" layoutX="119.0" layoutY="400.0" text="Pemière fois avec nous ?" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="319.0" fitWidth="342.0" layoutX="131.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@img/476562293_1308699587068958_6844410488137560971_n-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="sub_signupbutton" layoutX="142.0" layoutY="572.0" mnemonicParsing="false" onAction="#signupSlider" prefHeight="50.0" prefWidth="316.0" styleClass="side-btn" stylesheets="@css/SignInDesign.css" text="Créer compte">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sub_loginbutton" layoutX="142.0" layoutY="572.0" mnemonicParsing="false" onAction="#loginSlider" prefHeight="50.0" prefWidth="316.0" styleClass="side-btn" stylesheets="@css/SignInDesign.css" text="Se connecter" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="login_form" layoutX="600.0" prefHeight="800.0" prefWidth="600.0" styleClass="right-form" stylesheets="@css/SignInDesign.css" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="59.0" layoutY="257.0" text="Mot de passe">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="57.0" layoutY="145.0" prefHeight="26.0" prefWidth="36.0" text="Email">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label fx:id="si_seconnecter" layoutX="211.0" layoutY="31.0" text="Se connecter" textFill="#f58400">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="si_boutonseconnecter" layoutX="123.0" layoutY="541.0" mnemonicParsing="false" onAction="#login" prefHeight="43.0" prefWidth="375.0" styleClass="login-btn" text="Se connecter">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                     </stylesheets>
+                  </Button>
+                  <TextField fx:id="si_email" layoutX="57.0" layoutY="190.0" prefHeight="40.0" prefWidth="486.0" promptText="Email" styleClass="textfield" stylesheets="@css/SignInDesign.css" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.39999999999998" />
+                  <PasswordField fx:id="si_mdp" layoutX="57.0" layoutY="298.0" prefHeight="40.0" prefWidth="486.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                  <Label layoutX="252.0" layoutY="640.0" text="Mot de passe oublié?" textFill="#f58400">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="recoverbtn" layoutX="123.0" layoutY="693.0" mnemonicParsing="false" onAction="#ouvrirResetPassword" prefHeight="43.0" prefWidth="375.0" style="-fx-background-color: #c96060;" styleClass="recover-password-btn" stylesheets="@css/SignInDesign.css" text="Récupérer mon compte" textFill="WHITE" />
+                  <WebView fx:id="captchaWebView" layoutX="123.0" layoutY="363.0" prefHeight="130.0" prefWidth="375.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sup" prefHeight="40.0" prefWidth="1200.0">
+
+               <children>
+                  <Button fx:id="close" layoutX="734.0" layoutY="8.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="36.0" styleClass="close" stylesheets="@css/SignInDesign.css" text="x" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_form" prefHeight="800.0" prefWidth="600.0" styleClass="right-form" stylesheets="@css/SignInDesign.css" visible="false">
+               <children>
+                  <Label layoutX="30.0" layoutY="310.0" text="Mot de passe">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="30.0" layoutY="230.0" prefHeight="26.0" prefWidth="36.0" text="Email">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="208.0" layoutY="40.0" text="Créer compte" textFill="#f58400">
+                     <font>
+                        <Font name="System Bold" size="29.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="su_signupbutton" layoutX="122.0" layoutY="726.0" mnemonicParsing="false" onAction="#handleSuivantButtonAction" prefHeight="43.0" prefWidth="325.0" styleClass="login-btn" text="Créer mon compte">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                        <URL value="@css/SignInDesign.css" />
+                     </stylesheets>
+                  </Button>
+                  <TextField fx:id="su_email" layoutX="29.0" layoutY="265.0" prefHeight="31.0" prefWidth="339.0" promptText="Email" styleClass="textfield" stylesheets="@css/SignInDesign.css" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="31.799999999999955" />
+                  <PasswordField fx:id="su_mdp" layoutX="28.0" layoutY="340.0" prefHeight="31.0" prefWidth="339.0" promptText="Mot de passe" styleClass="textfield" stylesheets="@css/SignInDesign.css" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="32.799999999999955" />
+                  <Label layoutX="22.0" layoutY="163.0" prefHeight="26.0" prefWidth="36.0" text="Nom">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="274.0" layoutY="163.0" prefHeight="26.0" prefWidth="60.0" text="Prénom">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="su_nom" layoutX="66.0" layoutY="163.0" prefHeight="31.0" prefWidth="175.0" promptText="Nom" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                  <TextField fx:id="su_prenom" layoutX="349.0" layoutY="163.0" prefHeight="31.0" prefWidth="175.0" promptText="Prénom" styleClass="textfield" stylesheets="@css/SignInDesign.css" AnchorPane.rightAnchor="75.79999999999995" />
+                  <ChoiceBox fx:id="choicebox" layoutX="327.0" layoutY="400.0" prefHeight="26.0" prefWidth="197.0" />
+                  <Label layoutX="60.0" layoutY="402.0" text="Je rejoigne l'application en tant que :">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="adherentFields" layoutX="28.0" layoutY="450.0" prefHeight="274.0" prefWidth="539.0" visible="false">
+                     <children>
+                        <TextField fx:id="poids" layoutX="126.0" layoutY="11.0" prefHeight="31.0" prefWidth="111.0" promptText="Poids (kg)" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="taille" layoutX="330.0" layoutY="9.0" prefHeight="31.0" prefWidth="111.0" promptText="Taille (cm)" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="age" layoutX="125.0" layoutY="61.0" prefHeight="31.0" prefWidth="111.0" promptText="Âge" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <ComboBox fx:id="genre" layoutX="332.0" layoutY="60.0" prefHeight="31.0" prefWidth="111.0" promptText="Genre" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <ComboBox fx:id="objectifPersonnel" layoutX="216.0" layoutY="121.0" prefHeight="31.0" prefWidth="212.0" promptText="Objectif personnel" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <ComboBox fx:id="niveauActivite" layoutX="216.0" layoutY="176.0" prefHeight="32.0" prefWidth="212.0" promptText="Niveau d'activité" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <Label layoutX="77.0" layoutY="16.0" text="Poids:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="281.0" layoutY="16.0" text="Taille:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="82.0" layoutY="68.0" text="Age:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="279.0" layoutY="68.0" text="Genre:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="105.0" layoutY="126.0" text="Votre objectif: ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="105.0" layoutY="181.0" text="Votre niveau : ">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+
+                        <AnchorPane fx:id="coachFields" layoutX="30.0" layoutY="450.0" prefHeight="228.0" prefWidth="539.0" visible="false">
+                     <children>
+                        <TextField fx:id="anneeExperience" layoutX="201.0" layoutY="60.0" prefHeight="31.0" prefWidth="212.0" promptText="Années d'expérience" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <ComboBox fx:id="specialite" layoutX="204.0" layoutY="129.0" prefHeight="31.0" prefWidth="206.0" promptText="Spécialité" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <Label layoutX="90.0" layoutY="65.0" text="Expérience:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="94.0" layoutY="134.0" text="Spécialité:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+
+                        <AnchorPane fx:id="createurEventFields" layoutX="30.0" layoutY="450.0" prefHeight="218.0" prefWidth="539.0" visible="false">
+                     <children>
+                        <TextField fx:id="nomOrganisation" layoutX="174.0" layoutY="1.0" prefHeight="32.0" prefWidth="360.0" promptText="Nom de l'organisation" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="descriptionCreateur" layoutY="80.0" prefHeight="110.0" prefWidth="230.0" promptText="Description" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="adresseCreateur" layoutX="321.0" layoutY="48.0" prefHeight="32.0" prefWidth="212.0" promptText="Adresse" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="telephoneCreateur" layoutX="328.0" layoutY="107.0" prefHeight="32.0" prefWidth="205.0" promptText="Téléphone" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <Label layoutY="6.0" text="Nom de l'organisation:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="53.0" text="Description:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="252.0" layoutY="53.0" text="Adresse:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="252.0" layoutY="109.0" text="Téléphone:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="investisseurFields" layoutX="40.0" layoutY="460.0" prefHeight="218.0" prefWidth="539.0" visible="false">
+                     <children>
+                        <TextField fx:id="nomEntreprise" layoutX="174.0" layoutY="1.0" prefHeight="32.0" prefWidth="360.0" promptText="Nom de l'entreprise" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="descriptionInvestisseur" layoutY="80.0" prefHeight="110.0" prefWidth="230.0" promptText="Description" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="adresseInvestisseur" layoutX="321.0" layoutY="48.0" prefHeight="32.0" prefWidth="212.0" promptText="Adresse" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <TextField fx:id="telephoneInvestisseur" layoutX="328.0" layoutY="107.0" prefHeight="32.0" prefWidth="205.0" promptText="Téléphone" styleClass="textfield" stylesheets="@css/SignInDesign.css" />
+                        <Label layoutY="6.0" text="Nom de l'entreprise:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="53.0" text="Description:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="252.0" layoutY="53.0" text="Adresse:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="252.0" layoutY="109.0" text="Téléphone:">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label fx:id="titreimage" layoutX="320.0" layoutY="179.0" text="titreimage" textFill="#f27f38" visible="false" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+
+
+</StackPane>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="815.0" prefWidth="1550.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PaiementCoachPlan">
+    <children>
+        <HBox prefHeight="810.0" prefWidth="288.0">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="810.0" prefWidth="341.0" styleClass="bg">
+                    <children>
+                        <ImageView fitHeight="199.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/logor.png" />
+                            </image>
+                        </ImageView>
+                        <Button fx:id="home" mnemonicParsing="false" onAction="#GoToHome" prefHeight="67.0" prefWidth="298.0" style="-fx-background-color: F58400;" text="Home" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/home.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="50.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="seance" mnemonicParsing="false" onAction="#GoToSeance" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Séances" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/calendrier.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="produit" mnemonicParsing="false" onAction="#GoToProduit" prefHeight="67.0" prefWidth="294.0" style="-fx-background-color: F58400;" text="Produits" textFill="#fafafa">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="33.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/produit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="40.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="offre" mnemonicParsing="false" onAction="#GoToOffre" prefHeight="67.0" prefWidth="300.0" style="-fx-background-color: F58400;" text="Offres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/offre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="60.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="event" mnemonicParsing="false" onAction="#GoToEvent" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58400;" text="Evénements" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="38.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/event.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                            <padding>
+                                <Insets right="15.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="reclamation" mnemonicParsing="false" onAction="#GoToRec" prefHeight="67.0" prefWidth="306.0" style="-fx-background-color: F58500;" text="Reclamations" textFill="#f7f7f7">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/plainte.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button fx:id="parametre" minHeight="0.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="362.0" style="-fx-background-color: F58400;" text="Paramètres" textFill="WHITE">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="29.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/paramètre.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </Button>
+                        <Separator prefWidth="200.0" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="42.0" prefWidth="602.0" style="-fx-background-color: F58400;" styleClass="lg" textFill="WHITE" translateY="50.0">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fx:id="logout" fitHeight="40.0" fitWidth="43.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/sortie.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+        <VBox layoutX="288.0" prefHeight="67.0" prefWidth="1260.0" style="-fx-background-color: #708090;">
+            <children>
+                <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="1246.0">
+                    <children>
+                        <HBox alignment="CENTER" prefHeight="67.0" prefWidth="1159.0">
+                            <children>
+                                <TextField fx:id="search" prefHeight="33.0" prefWidth="249.0" promptText="Recherche..." styleClass="search-box">
+                                    <font>
+                                        <Font name="Cambria" size="14.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                </TextField>
+                                <ImageView fx:id="isearch" fitHeight="42.0" fitWidth="38.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@img/cherche.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <ImageView fitHeight="57.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/notification.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="41.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/profile.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets right="22.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox fx:id="cardContainer1" layoutX="1017.0" layoutY="212.0" prefHeight="371.0" prefWidth="382.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-padding: 20;">
+            <children>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Détails du paiement" />
+
+                <Separator style="-fx-padding: 10 0;" />
+
+                <!-- Payment Form -->
+                <GridPane hgap="10" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints maxWidth="143.199951171875" minWidth="105.5999755859375" prefWidth="124.0" />
+                        <ColumnConstraints maxWidth="194.40002441406247" minWidth="156.80004882812497" prefWidth="175.99999999999997" />
+                    </columnConstraints>
+
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                    </rowConstraints>
+
+                    <children>
+                        <Label style="-fx-text-fill: #666666;" text="Numéro de carte" GridPane.rowIndex="0" />
+                        <TextField fx:id="ncarte" prefHeight="36.0" prefWidth="200.0" promptText="1234 5678 9012 3456" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                        <Label style="-fx-text-fill: #666666;" text="Date d'expiration" GridPane.rowIndex="1" />
+                        <HBox prefHeight="26.0" prefWidth="229.0" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <TextField fx:id="mm" promptText="MM" style="-fx-pref-width: 60;" />
+                            <TextField fx:id="yy" promptText="YY" style="-fx-pref-width: 80;" />
+                        </HBox>
+
+                        <Label style="-fx-text-fill: #666666;" text="CVC" GridPane.rowIndex="2" />
+                        <TextField fx:id="cvc" promptText="123" style="-fx-pref-width: 80;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                        <Label style="-fx-text-fill: #666666;" text="Titulaire de la carte" GridPane.rowIndex="3" />
+                        <TextField fx:id="nomT" promptText="John Doe" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+
+                <!-- Security Info -->
+                <HBox alignment="CENTER" spacing="5" translateY="20.0">
+
+                    <!-- Pay Button -->
+                    <Button fx:id="payerBtn" onAction="#handlePayment" style="-fx-background-color: #2196F3; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5; -fx-padding: 10 20;" text="Payez maintenant" translateX="-30.0" />
+                    <ImageView fitHeight="20" fitWidth="20" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@img/lock.png" />
+                        </image>
+                    </ImageView>
+                    <Label style="-fx-text-fill: #666666; -fx-font-size: 12px;" text="Paiement sécurisé" />
+                </HBox>
+            </children>
+        </VBox>
+        <VBox fx:id="cardContainer11" alignment="TOP_CENTER" layoutX="366.0" layoutY="189.0" prefHeight="499.0" prefWidth="526.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;              -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0); -fx-padding: 20;">
+            <children>
+                <Label style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333333;" text="Détails du coach" />
+                <ImageView fx:id="imagecoach" fitHeight="129.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true" />
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <children>
+                        <Label style="-fx-text-fill: #999999; -fx-font-size: 16px;" text="Nom et Prenom" />
+                        <Label fx:id="labelNometPrenom" style="-fx-text-fill: #2196F3; -fx-font-size: 24px; -fx-font-weight: bold;" />
+                    </children>
+                </HBox>
+                <Separator style="-fx-padding: 10 0;" />
+                <GridPane hgap="10" prefHeight="235.0" prefWidth="432.0" vgap="15">
+                    <columnConstraints>
+                        <ColumnConstraints maxWidth="143.199951171875" minWidth="105.5999755859375" prefWidth="124.0" />
+                        <ColumnConstraints maxWidth="215.40002441406247" minWidth="156.80004882812497" prefWidth="353.0" />
+                  <ColumnConstraints maxWidth="215.40002441406247" minWidth="156.80004882812497" prefWidth="353.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                    </rowConstraints>
+                    <children>
+                        <Label style="-fx-text-fill: #666666;" text="specialite" GridPane.rowIndex="0" />
+                        <TextField fx:id="specialite" disable="true" prefHeight="36.0" prefWidth="198.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label style="-fx-text-fill: #666666;" text="année d'experience" GridPane.rowIndex="1" />
+                        <HBox prefHeight="26.0" prefWidth="229.0" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <children>
+                                <TextField fx:id="anneeExp" disable="true" prefHeight="36.0" prefWidth="217.0" />
+                            </children>
+                        </HBox>
+                        <Label style="-fx-text-fill: #666666;" text="note" GridPane.rowIndex="2" />
+                        <Label style="-fx-text-fill: #666666;" text="Description planning" GridPane.rowIndex="3" />
+                        <TextField fx:id="descriptionplan" disable="true" prefHeight="36.0" prefWidth="230.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <HBox fx:id="hboxNote" prefHeight="38.0" prefWidth="176.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="Tarif" disable="true" prefHeight="36.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="Tarif Planning" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" onAction="#reserverCoach" prefHeight="26.0" prefWidth="118.0" style="-fx-background-color: F58400;" text="Reserver Coach" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="31.0" />
+                     </GridPane.margin>
+                  </Button>
+                    </children>
+                </GridPane>
+            </children>
+        </VBox>
+
+        <Button layoutX="315.0" layoutY="85.0" mnemonicParsing="false" onAction="#retourauhome" prefHeight="35.0" prefWidth="176.0" style="-fx-background-color: F58400;" text="Retour au acceuil" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/home.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

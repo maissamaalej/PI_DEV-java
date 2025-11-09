@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PopUpDetailsProduitController">
+   <children>
+      <Label layoutX="252.0" layoutY="35.0" text="Nom Produit : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="nom_produit" layoutX="252.0" layoutY="65.0" text="Nom Produit ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="255.0" layoutY="103.0" text="Prix Produit : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="prix" layoutX="378.0" layoutY="103.0" text="Prix Produit : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Separator layoutX="252.0" layoutY="139.0" prefHeight="3.0" prefWidth="313.0" />
+      <Spinner fx:id="quantite" layoutX="252.0" layoutY="171.0" prefHeight="30.0" prefWidth="96.0" />
+      <Button layoutX="378.0" layoutY="171.0" mnemonicParsing="false" onAction="#AjouterProduitAupanier" prefHeight="30.0" prefWidth="138.0" style="-fx-background-color: F58400;" text=" Ajouter au Panier" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Separator layoutX="252.0" layoutY="236.0" prefHeight="3.0" prefWidth="313.0" />
+      <Label layoutX="253.0" layoutY="300.0" text="Disponibilité : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="disponibilité" layoutX="376.0" layoutY="300.0" text="Disponibilité : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="345.0" text="Categorie : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="categorie" layoutX="380.0" layoutY="346.0" text="Categorie : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="257.0" text="Description : ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="description" layoutX="375.0" layoutY="257.0" text="Description : ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ViewImage" fitHeight="207.0" fitWidth="200.0" layoutX="24.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

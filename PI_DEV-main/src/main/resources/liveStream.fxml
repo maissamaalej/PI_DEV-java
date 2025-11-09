@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="Controllers.LiveStreamController">
+    <Button text="🎥 Démarrer le Live" fx:id="btnStartLive" onAction="#startLive"/>
+    <Button text="❌ Arrêter le Live" fx:id="btnStopLive" onAction="#stopLive" disable="true"/>
+    <WebView fx:id="webView" prefHeight="400" prefWidth="600"/>
+</VBox>

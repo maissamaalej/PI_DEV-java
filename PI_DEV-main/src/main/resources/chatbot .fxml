@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ChatbotController">
+
+    <BorderPane prefHeight="560.0" prefWidth="760.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+
+        <!-- Zone de messages -->
+        <center>
+            <ListView fx:id="chatListView" prefHeight="500.0" prefWidth="750.0" styleClass="chat-list" stylesheets="@css/chatbot.css" />
+        </center>
+
+        <!-- Zone de saisie -->
+        <bottom>
+            <HBox alignment="CENTER" spacing="15" styleClass="hbox" stylesheets="@css/chatbot.css">
+                <padding>
+                    <Insets bottom="15" left="15" right="15" top="15" />
+                </padding>
+                <TextField fx:id="inputField" prefWidth="600.0" promptText="Posez votre question..." styleClass="input-field" stylesheets="@css/chatbot.css" />
+                <Button fx:id="sendButton" styleClass="send-button" stylesheets="@css/chatbot.css" text="Envoyer" />
+            </HBox>
+        </bottom>
+
+    </BorderPane>
+
+</AnchorPane>

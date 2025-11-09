@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="1587.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <!-- Sidebar -->
+        <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="740.0" prefWidth="235.0" style="-fx-background-color: #393351;">
+            <children>
+                <!-- Logo Section -->
+                <Pane layoutX="0.0" layoutY="66.0" prefHeight="61.0" prefWidth="235.0" style="-fx-background-color: #FA2C56; -fx-background-radius: 5;">
+                    <children>
+                        <Label layoutX="25.0" layoutY="17.0" text="Coachini" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+
+                <!-- Navigation Buttons -->
+                <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="0.0" layoutY="163.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="235.0" styleClass="button1"  text="Home" textFill="WHITE">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@/img/home.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="0.0" layoutY="241.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="235.0" styleClass="button1"  text="Coaches" textFill="WHITE">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/coach.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="0.0" layoutY="319.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="235.0" styleClass="button1"  text="Products" textFill="WHITE">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/product.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="0.0" layoutY="397.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="235.0" styleClass="button1"  text="Events" textFill="WHITE">
+                    <padding>
+                        <Insets left="40.0" />
+                    </padding>
+                    <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@img/event1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </AnchorPane>
+
+        <!-- Main Content Area -->
+        <AnchorPane layoutX="235.0" layoutY="0.0" prefHeight="740.0" prefWidth="1352.0" style="-fx-background-color: #f5f5f5;">
+            <children>
+                <!-- Hero Section -->
+                <VBox layoutX="10.0" layoutY="10.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+                        <Label text="Bienvenue chez Coachini !" textFill="#FA2C56">
+                            <font>
+                                <Font name="Arial Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label text="Votre destination ultime pour le coaching en ligne et les équipements sportifs." textFill="#333333">
+                            <font>
+                                <Font name="Arial" size="16.0" />
+                            </font>
+                        </Label>
+                        <Button style="-fx-background-color: #FA2C56; -fx-text-fill: WHITE;" styleClass="button1" text="Explorez maintenant">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </VBox>
+
+                <!-- Featured Coaches Section -->
+                <VBox layoutX="10.0" layoutY="200.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+                        <Label text="Entraîneurs en vedette" textFill="#333333">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <HBox spacing="20.0">
+                            <!-- Example Coach Card -->
+                            <VBox prefWidth="300.0" style="-fx-border-color: #cccccc; -fx-border-radius: 5; -fx-padding: 10; -fx-background-color: white;">
+                                <children>
+                                    <ImageView fitHeight="150.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@img/coach.png" />
+                                        </image>
+                                    </ImageView>
+                                    <Label text="John Doe" textFill="#333333">
+                                        <font>
+                                            <Font name="Arial Bold" size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="Fitness Coach" textFill="#666666">
+                                        <font>
+                                            <Font name="Arial" size="14.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </VBox>
+
+                            <!-- Add more coach cards here -->
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <!-- Popular Products Section -->
+                <VBox layoutX="10.0" layoutY="450.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+                        <Label text="Produits populaires" textFill="#333333">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <HBox spacing="20.0">
+                            <!-- Example Product Card -->
+                            <VBox prefWidth="300.0" style="-fx-border-color: #cccccc; -fx-border-radius: 5; -fx-padding: 10; -fx-background-color: white;">
+                                <children>
+                                    <ImageView fitHeight="150.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@img/product.png" />
+                                        </image>
+                                    </ImageView>
+                                    <Label text="Running Shoes" textFill="#333333">
+                                        <font>
+                                            <Font name="Arial Bold" size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="99 DT" textFill="#FA2C56">
+                                        <font>
+                                            <Font name="Arial" size="16.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </VBox>
+
+                            <!-- Add more product cards here -->
+                        </HBox>
+                    </children>
+                </VBox>
+
+                <!-- Upcoming Events Section -->
+                <VBox layoutX="10.0" layoutY="600.0" spacing="20.0" style="-fx-padding: 20;">
+                    <children>
+                        <Label text="Événements à venir" textFill="#333333">
+                            <font>
+                                <Font name="Arial Bold" size="20.0" />
+                            </font>
+                        </Label>
+                        <HBox spacing="20.0">
+                            <!-- Example Event Card -->
+                            <VBox prefWidth="300.0" style="-fx-border-color: #cccccc; -fx-border-radius: 5; -fx-padding: 10; -fx-background-color: white;">
+                                <children>
+                                    <ImageView fitHeight="150.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@img/event1.png" />
+                                        </image>
+                                    </ImageView>
+                                    <Label text="Fitness Workshop" textFill="#333333">
+                                        <font>
+                                            <Font name="Arial Bold" size="16.0" />
+                                        </font>
+                                    </Label>
+                                    <Label text="June 15, 2023" textFill="#666666">
+                                        <font>
+                                            <Font name="Arial" size="14.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </VBox>
+
+                            <!-- Add more event cards here -->
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
